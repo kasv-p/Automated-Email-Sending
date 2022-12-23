@@ -12,7 +12,7 @@
 ```
 git clone https://github.com/kasv-p/Automated-Emails.git
 ```
-3. Later go to Js folder.
+3. Later go to js folder.
 ```
 cd Js
 ```
@@ -34,7 +34,7 @@ git clone https://github.com/kasv-p/Automated-Emails.git
 ```
 3. Later go to Python folder.
 ```
-cd Python
+cd python
 ```
 4. Firstly for sending email create app password for mail app with email address (from adress).
 ```
@@ -42,3 +42,19 @@ https://myaccount.google.com/apppasswords
 ```
 5. Later replace from address, to address, bcc addresses and password with app password generated before.
 
+
+### Steps To Use PHP Code
+1. Clone this repository.
+2. Use the following command to clone the repository.
+```
+git clone https://github.com/kasv-p/Automated-Emails.git
+```
+3. Later go to PHP folder.
+```
+cd php
+```
+4. Firstly for sending email create app password for mail app with email address (from adress).
+```
+https://myaccount.google.com/apppasswords
+```
+5. Set smtp username as email id which is used to generate app password in the previous step, set smtp password as app password and read the comments in the send_email.php and place the details accordingly.
