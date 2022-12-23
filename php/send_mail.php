@@ -1,7 +1,5 @@
 <?php
-$name=$_POST['name'];
-$email=$_POST['email'];
-$tel=$_POST['tel'];
+
 
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
@@ -36,8 +34,6 @@ try {
     // $mail->addCC('cc@example.com'); //cc address
     // $mail->addBCC('bcc@example.com'); //bcc address
     
-    // $msg="Name".$name."/n".Email.$email."/n".Phone.$tel."/n";
-    // echo $msg;
     
     //Attachments
     // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
