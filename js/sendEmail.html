@@ -15,8 +15,8 @@
       function sendEmail() {
         Email.send({
           SecureToken: "securetoken",
-          To: "fromaddress",
-          From: "toaddress",
+          To: "fromaddress", // from address here
+          From: "toaddress", // to address here
           Subject: "This is the subject",
           Body: "And this is the body",
         }).then((message) => alert(message));
