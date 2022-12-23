@@ -29,12 +29,12 @@ try {
     $mail->Port       = '587';                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     
     //Recipients
-    $mail->setFrom('ksvd1234@gmail.com');
-    $mail->addAddress('kvlsvani2468@gmail.com');     //Add a recipient
-    // $mail->addAddress('ellen@example.com');       //Name is optional
-    // $mail->addReplyTo('info@example.com', 'Information');
-    // $mail->addCC('cc@example.com');
-    // $mail->addBCC('bcc@example.com');
+    $mail->setFrom('');                //From address
+    $mail->addAddress('');             //To Address
+
+    // $mail->addReplyTo('', '');      //From Address and subject name
+    // $mail->addCC('cc@example.com'); //cc address
+    // $mail->addBCC('bcc@example.com'); //bcc address
     
     // $msg="Name".$name."/n".Email.$email."/n".Phone.$tel."/n";
     // echo $msg;
@@ -45,10 +45,10 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = "h ii";
-    $mail->Body    = "hi";
-    // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-    echo "hiill";
+    $mail->Subject = ""; //subject here
+    $mail->Body    = ""; //body of the mail here
+    // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients'; /this is alternate body
+   
     $mail->send();
     echo 'Message has been sent';
 } catch (Exception $e) {
