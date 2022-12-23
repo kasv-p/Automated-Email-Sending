@@ -24,7 +24,7 @@ https://app.elasticemail.com/marketing/create-account?r=20b444a2-b3af-4eb8-bae7-
 ```
 https://smtpjs.com/
 ```
-6. Later replace from address, to address and SecureToken in the js code present in sendEmail.html
+6. Later replace from address, to address and SecureToken in the js code present in sendEmail.html and press sendEmail button to send the email.
 
 ### Steps To Use Python Code
 1. Clone this repository.
@@ -41,10 +41,14 @@ cd python
 https://myaccount.google.com/apppasswords
 ```
 5. Later replace from address, to address, bcc addresses and password with app password generated before.
+6. Run the python code using the below command.
+```
+python sendEmail.py
+```
 
 
 ### Steps To Use PHP Code
-1. Clone this repository.
+1. Clone this repository into htdocs folder (which is present in xampp folder).
 2. Use the following command to clone the repository.
 ```
 git clone https://github.com/kasv-p/Automated-Emails.git
@@ -58,3 +62,7 @@ cd php
 https://myaccount.google.com/apppasswords
 ```
 5. Set smtp username as email id which is used to generate app password in the previous step, set smtp password as app password and read the comments in the send_email.php and place the details accordingly.
+6. For accessing the website use the following url to open php file and click sendEmail button to send email.
+```
+http://localhost/php/index.php
+```
