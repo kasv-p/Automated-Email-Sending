@@ -14,17 +14,13 @@
     <script>
       function sendEmail() {
         Email.send({
-          SecureToken: "f501ee36-826e-4378-a07d-6472160a1d92",
+          SecureToken: "securetoken",
           To: "fromaddress",
           From: "toaddress",
           Subject: "This is the subject",
           Body: "And this is the body",
         }).then((message) => alert(message));
       }
-
-      
-
-      
     </script>
   </body>
 </html>
